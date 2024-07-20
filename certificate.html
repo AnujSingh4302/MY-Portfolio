@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates - Anuj Singh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            position: relative;
+            background-color: #ffffff;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: right;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .headline {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-size: 36px;
+            color: #333;
+        }
+        .section {
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .carousel {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px 0;
+            position: relative;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .carousel-item {
+            min-width: 300px;
+            min-height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            scroll-snap-align: center;
+            transition: transform 0.3s;
+            overflow: hidden; /* Ensures images fit within the item */
+        }
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .carousel-item:hover {
+            transform: scale(1.1);
+        }
+        .carousel-item .details {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .carousel-item:hover .details {
+            display: block;
+        }
+        .background-shapes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .shape {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0.8;
+            animation: fadeInOut 3s infinite;
+            border-radius: 50%;
+        }
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            50% { opacity: 0.8; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Portfolio Website</a>
+        <a href="https://www.linkedin.com/in/anuj-singh-2004a4209" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/justanother_anuj" target="_blank">Instagram</a>
+    </nav>
+
+    <div class="headline">
+        <h1>My Certificates</h1>
+    </div>
+
+    <div class="section">
+        <h2>Technical Certificates</h2>
+        <div class="carousel" id="tech-carousel">
+            
+            <div class="carousel-item">
+                <img src="tech/2.jpg" alt="Technical Certificate 2" >
+                <div class="details">
+                    SHAPE AI <br> Backend Web Dev with NodeJs
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/3.png" alt="Technical Certificate 3" >
+                <div class="details">
+                    Full Stack Web Development <br> Summer Training
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/4.jpg" alt="Technical Certificate 1" >
+                <div class="details">
+                    SHAPE AI and Microsoft Learn
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/5.png" alt="Technical Certificate 2" >
+                <div class="details">
+                    Digital Adda <br> Full Stack Web Dev
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/6.png" alt="Technical Certificate 3" >
+                <div class="details">
+                    Pride Bridge Foundation <br> Graphic Design<br>2 month internship
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/7.png" alt="Technical Certificate 1" >
+                <div class="details">
+                    LetsGrowMore <br> Web Development
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/8.png" alt="Technical Certificate 2" >
+                <div class="details">
+                    Childo Education research and Foundation <br> Graphic Design
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/9.png" alt="Technical Certificate 3" >
+                <div class="details">
+                    google <br> Sending Emails at Workplace
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/10.png" alt="Technical Certificate 1" >
+                <div class="details">
+                    Participation <br> Script Winter on code 2022
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/11.jpg" alt="Technical Certificate 2" >
+                <div class="details">
+                    Full Stack Web Dev
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="tech/13.png" alt="Technical Certificate 1" >
+                <div class="details">
+                    GirlScript Winter of Contribution 
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="tech/15.jpg" alt="Technical Certificate 3" >
+                <div class="details">
+                    AI Intro Webinar
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/16.png" alt="Technical Certificate 1" >
+                <div class="details">
+                    The Bronze hand by <br> The Sparks Foundation
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/17.png" alt="Technical Certificate 2" >
+                <div class="details">
+                    The Sparks Foundation <br> Web Development and Designning
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/18.jpg" alt="Technical Certificate 3" >
+                <div class="details">
+                    SHAPE AI and Microsoft Learn
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/1.png" alt="Technical Certificate 1" style="max-width: 200px;" >
+                <div class="details">
+                    DevFest 2021
+                </div>
+            </div> 
+            <div class="carousel-item">
+                <img src="tech/14.png" alt="Technical Certificate 2" style="max-width: 200px;">
+                <div class="details">
+                    Internshala ISP
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tech/12.jpeg" alt="Technical Certificate 3" style="max-width: 200px;">
+                <div class="details">
+                    Contribution badge <br> GirlScript Winter of Contributing
+                </div>
+            </div>
+            <!-- Repeat for additional technical certificates -->
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Non-Technical Certificates</h2>
+        <div class="carousel" id="nontech-carousel">
+            <div class="carousel-item">
+                <img src="non-tech/1.jpg" alt="Technical Certificate 2" >
+                <div class="details">
+                    SUIMS <br> Content Creation Webinar
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/2.png" alt="Technical Certificate 3" >
+                <div class="details">
+                    Enterpreneurship Cell IIT Khragpur <br> ENTERPRENEURSHIP Awareness Drive Ranchi
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/3.png" alt="Technical Certificate 1" >
+                <div class="details">
+                        NEO Foundation <br> Campus Ambassador
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/4.jpg" alt="Technical Certificate 2" >
+                <div class="details">
+                    PGDAV College <br> ADAPT IT <br> First Position
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/5.jpg" alt="Technical Certificate 3" >
+                <div class="details">
+                    GTBIT <br> Kavi Darbar <br> Second Position
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/6.jpg" alt="Technical Certificate 1" >
+                <div class="details">
+                    NSS MSI <br> Tell a tale 
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/7.png" alt="Technical Certificate 2" >
+                <div class="details">
+                    LetsGrowMore <br> Campus Ambassador
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/8.jpg" alt="Technical Certificate 3" >
+                <div class="details">
+                    LeaderShala <br> Communication Skill
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/9.jpg" alt="Technical Certificate 1" >
+                <div class="details">
+                    Lal Bahadur Shastri Institute of Mangement <br> Weekend Theatre Films <br>Udghosh
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/10.png" alt="Technical Certificate 2" >
+                <div class="details">
+                    Shaheed Rajguru College <br> Kavi Nexus 2022
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="non-tech/11.jpg" alt="Technical Certificate 1" >
+                <div class="details">
+                    Quantel <br> Webinar on Consulting as a career
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="non-tech/12.jpg" alt="Technical Certificate 3" >
+                <div class="details">
+                    Ministry of Culture <br> Gov of India
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/13.png" alt="Technical Certificate 1" >
+                <div class="details">
+                    Enterpreneurship Cell IIT Khragpur <br> ENTERPRENEURSHIP Awareness Drive NCR
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/14.png" alt="Technical Certificate 2" style="max-width: 150px;">
+                <div class="details">
+                    Tare Zameen Foundation <br> Campus Ambassador
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/15.png" alt="Technical Certificate 3" style="max-width: 200px;">
+                <div class="details">
+                    LetsGrowMore <br> Campus Ambassador
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/16.png" alt="Technical Certificate 1" style="max-width: 200px;" >
+                <div class="details">
+                    Letter of recommendation <br> LetsGrowMore
+                </div>
+            </div> 
+            <div class="carousel-item">
+                <img src="non-tech/17.png" alt="Technical Certificate 2" style="max-width: 200px;">
+                <div class="details">
+                    NEO Educational Foundaion <br> Campus Ambassador
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="non-tech/18.jpg" alt="Technical Certificate 3" >
+                <div class="details">
+                    Quepinch <br> Odyssey II Poetry Contest
+                </div>
+            </div>
+            <!-- Repeat for additional non-technical certificates -->
+        </div>
+    </div>
+
+    <div class="background-shapes"></div>
+
+    <script>
+        // Generate random geometric shapes
+        function createShape() {
+            const shape = document.createElement('div');
+            shape.classList.add('shape');
+            shape.style.left = `${Math.random() * 100}vw`;
+            shape.style.top = `${Math.random() * 100}vh`;
+            shape.style.width = `${Math.random() * 30 + 10}px`;
+            shape.style.height = `${Math.random() * 30 + 10}px`;
+            shape.style.backgroundColor = `rgba(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, 0.5)`;
+            document.querySelector('.background-shapes').appendChild(shape);
+
+            setTimeout(() => {
+                shape.remove();
+            }, 3000);
+        }
+
+        setInterval(createShape, 500);
+    </script>
+</body>
+</html>

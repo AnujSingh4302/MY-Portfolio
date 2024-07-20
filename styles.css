@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    margin-top: 56px; /* Adjust for fixed navbar */
+}
+
+header.jumbotron .btn-dark {
+    margin-top: 1rem;
+}
+
+section {
+    padding: 4rem 0;
+    margin-top: 56px; /* Adjust for fixed navbar */
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+}
+
+.carousel .carousel-item {
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+    width: 96px;
+    height: 96px;
+}
+
+.full-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.navbar {
+    scroll-snap-align: none;
+}
+
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    header.jumbotron h1 {
+        font-size: 2.5rem;
+    }
+}
+.tree {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.leaf {
+    position: relative;
+    padding: 20px 40px;
+    background-color: #007bff;
+    color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    font-size: 1.5rem; /* Increase font size for larger display */
+}
+
+.leaf img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.leaf:hover {
+    transform: scale(1.2);
+}
+
+.carousel-inner .carousel-item {
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+    width: 96px;
+    height: 96px;
+}
+
+.additional-skills {
+    margin-top: 3rem;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+}
+
+.skills-list li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-item .d-flex .leaf {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
+.carousel-item .d-flex .leaf img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.background-container {
+    position: absolute;
+    right: 130px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; /* Ensure the background is behind the text */
+}
+
+.background-container img {
+    width: 100%;
+    height: auto;
+    animation: wave 2s infinite;
+    transform-origin: bottom right;
+}
+
+    @keyframes wave {
+        0% { transform: rotate(0deg); }
+        20% { transform: rotate(20deg); }
+        40% { transform: rotate(-20deg); }
+        60% { transform: rotate(20deg); }
+        80% { transform: rotate(-20deg); }
+        100% { transform: rotate(0deg); }
+    }
